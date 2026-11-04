@@ -1,0 +1,45 @@
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background: #f8f8f8;
+}
+
+.btn {
+    background: #0d6efd;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.container {
+    margin: 20px 60px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px 15px;
+    text-align: left;
+}
+
+form {
+    display: inline;
+}
+
+.done td {
+    text-decoration: line-through;
+    color: gray;
+}
+
