@@ -123,19 +123,10 @@ python3 -m venv myenv
 
 ### Step 4: Activate the Virtual Environment
 
-For macOS/Linux:
-
 ```bash
 source myenv/bin/activate
 ```
 
-For Windows:
-
-```bash
-myenv\Scripts\activate
-```
-
-After activation, the terminal should display `(myenv)`.
 
 ### Step 5: Install Django
 
@@ -167,7 +158,6 @@ python manage.py migrate
 
 These commands create and update the database tables required by the application.
 
-**Note:** If a `db.sqlite3` file is already included with the project, the migration command will update the database as needed. Keep a backup before making changes to an existing database.
 
 ### Step 7: Run the Django Development Server
 
@@ -241,7 +231,6 @@ git branch -M main
 git push -u origin main
 ```
 
-Replace `YOUR_GITHUB_REPOSITORY_URL` with your own repository URL.
 
 ## 10. Learning Outcomes
 
