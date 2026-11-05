@@ -20,20 +20,23 @@ Features
 * CSS
 * SQLite
 
- Project Structure
+Project Structure
 
 todo_project/
 │
 ├── tasks/
 │   ├── migrations/
-│   ├── templates/
-│   ├── static/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
 │   └── admin.py
 │
+├── templates/
+│
+├── static/
+│
 ├── todo_project/
+│   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
 │   ├── asgi.py
@@ -41,6 +44,7 @@ todo_project/
 │
 ├── db.sqlite3
 ├── manage.py
+├── .gitignore
 └── README.md
 
  Installation and Setup
