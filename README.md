@@ -31,6 +31,7 @@ The application provides the following features:
 
 The project is organized into the following folders and files:
 
+```text
 todo_project/
 │
 ├── tasks/
@@ -62,7 +63,8 @@ todo_project/
 ├── manage.py
 └── README.md
 ```
- 5. Database Model
+
+## 5. Database Model
 
 The application uses a Django model named `Task` to store task information.
 
@@ -76,7 +78,7 @@ The model contains the following fields:
 | completed | Stores the completion status (True/False) |
 | created_at | Stores the task creation date and time |
 
-Completion Status
+### Completion Status
 
 The `completed` field is a Boolean field.
 
@@ -85,11 +87,11 @@ The `completed` field is a Boolean field.
 
 Whenever a user ticks or unticks the checkbox, the completion status is updated in the SQLite database.
 
- 6. Installation and Setup
+## 6. Installation and Setup
 
 Follow these steps to set up and run the project on your computer.
 
-Step 1: Install Python
+### Step 1: Install Python
 
 Download and install Python from:
 
@@ -97,7 +99,7 @@ https://www.python.org/downloads/
 
 Check whether Python is installed:
 
-
+```bash
 python3 --version
 ```
 
@@ -115,50 +117,65 @@ Make sure the terminal is inside the folder containing `manage.py`.
 
 Run:
 
-
+```bash
 python3 -m venv myenv
-
+```
 
 ### Step 4: Activate the Virtual Environment
 
+For macOS/Linux:
+
+```bash
 source myenv/bin/activate
+```
 
+For Windows:
 
+```bash
+myenv\Scripts\activate
+```
+
+After activation, the terminal should display `(myenv)`.
 
 ### Step 5: Install Django
 
 Run:
 
-
+```bash
 pip install django
-
+```
 
 Check the Django version:
 
-
+```bash
 python -m django --version
-
+```
 
 ### Step 6: Apply Database Migrations
 
 Run:
 
-
+```bash
 python manage.py makemigrations
-
+```
 
 Then:
 
-
+```bash
 python manage.py migrate
+```
 
+These commands create and update the database tables required by the application.
 
+**Note:** If a `db.sqlite3` file is already included with the project, the migration command will update the database as needed. Keep a backup before making changes to an existing database.
 
 ### Step 7: Run the Django Development Server
 
 Run:
-python manage.py runserver
 
+```bash
+python manage.py runserver
+```
 The To-Do List application will now be available.
 
 ## 7. How to Use the Application
@@ -179,8 +196,9 @@ The application uses SQLite as its database.
 
 The database file is named:
 
+```text
 db.sqlite3
-
+```
 
 It stores all task records, including their titles, descriptions, completion status, and creation dates.
 
@@ -192,7 +210,7 @@ To upload the project to GitHub:
 
 ### Step 1: Initialize Git
 
-
+```bash
 git init
 ```
 
